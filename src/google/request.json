@@ -1,0 +1,28 @@
+{
+  "query": { "dd": "3" },
+  "method": "GET",
+  "body": {},
+  "headers": {
+    "host": "us-central1-x-jigsaw-178405.cloudfunctions.net",
+    "user-agent":
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36",
+    "accept":
+      "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "accept-language": "ar,en-US;q=0.9,en;q=0.8,fr;q=0.7,fr-FR;q=0.6",
+    "cache-control": "max-age=0",
+    "function-execution-id": "st1tkxhw6gzd",
+    "if-none-match": "W/\"36d-81d494a4\"",
+    "upgrade-insecure-requests": "1",
+    "x-appengine-api-ticket": "d2210ff6870ebdc6",
+    "x-appengine-city": "riyadh",
+    "x-appengine-citylatlong": "24.711667,46.724167",
+    "x-appengine-country": "SA",
+    "x-appengine-https": "on",
+    "x-appengine-region": "01",
+    "x-appengine-user-ip": "93.168.208.226",
+    "x-cloud-trace-context":
+      "b13fbae5e4812f0c1505fb577ab0464b/10034126842948825502;o=1",
+    "x-forwarded-for": "93.168.208.226",
+    "accept-encoding": "gzip"
+  }
+}

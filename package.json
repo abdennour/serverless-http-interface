@@ -1,0 +1,29 @@
+{
+  "name": "serverless-http-interface",
+  "version": "0.0.1",
+  "description": "Facades to consistently handle HTTP request/response regardless provider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdennour/serverless-http-interface.git"
+  },
+  "keywords": [
+    "serverless",
+    "http",
+    "request",
+    "response",
+    "handler"
+  ],
+  "author": "Abdennour TOUMI",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abdennour/serverless-http-interface/issues"
+  },
+  "homepage": "https://github.com/abdennour/serverless-http-interface#readme",
+  "dependencies": {
+    "read-yaml": "^1.1.0"
+  }
+}
