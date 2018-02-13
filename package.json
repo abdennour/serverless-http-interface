@@ -6,7 +6,9 @@
   "scripts": {
     "prebuild": "chmod u+x scripts/*sh",
     "build": "sh scripts/build.sh",
-    "test": "mocha --watch --require src/setupTests.js $(find src -name '*spec.js')"
+    "test": "mocha --watch --require src/setupTests.js $(find src -name '*spec.js')",
+    "test:ci": "mocha --require src/setupTests.js $(find src -name '*spec.js')",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
