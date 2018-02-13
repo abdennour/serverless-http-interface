@@ -19,7 +19,7 @@ class AWSHttpRequest extends HttpRequest {
   }
 
   get method() {
-    returnn this.event.httpMethod;
+    return this.event.httpMethod;
   }
 }
 

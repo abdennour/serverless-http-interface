@@ -1,4 +1,4 @@
-const NotImplementedMethod = require('./NotImplementedMethod');
+const NotImplementedMethod = require('./_errors/NotImplementedMethod');
 
 class HttpResponse {
   constructor() {
