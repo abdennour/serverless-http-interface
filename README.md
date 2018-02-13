@@ -105,3 +105,15 @@ function handler(request, response, event, context, callback) {
 exports.handler = httpInterface(handler);
 
 ```
+
+# Note
+
+
+We should NOT release without writing unit-tests. But you are welcome to contribute. Nevertheless, the setup of unit-tests framework is done and you have to follow contribution section.
+
+
+# Contribution:
+
+
+- Tests pass with 80% coverage.
+- Test filename convention is "*.spec.js"
