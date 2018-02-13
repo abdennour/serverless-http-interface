@@ -1,6 +1,6 @@
 {
   "name": "serverless-http-interface",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Facades to consistently handle HTTP request/response regardless provider",
   "main": "lib/index.js",
   "scripts": {
