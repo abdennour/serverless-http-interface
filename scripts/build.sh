@@ -38,6 +38,7 @@ done
 smartecho "🔬 Clean up..."
 
 find $DIR/lib -name "*.spec.js"  -delete;
+find $DIR/lib -name "*.sample.json"  -delete; # No need Sample JSON files
 rm $DIR/lib/setupTests.js;
 
 smartecho "Done 🎉. The package is ready to be published"
