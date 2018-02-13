@@ -9,7 +9,7 @@ class AzureHttpResponse extends HttpResponse {
   send(data) {
     this.context = {
       status: this.statusCode,
-      headers: this.headers
+      headers: this.headers,
       body: data
     };
     this.context.done();
