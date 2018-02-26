@@ -6,11 +6,19 @@ class AWSHttpResponse extends HttpResponse {
     this.callback = callback;
   }
 
+  body(data) {
+    const contentType =
+      this.headers['Content-Type'] || this.headers['content-type'] || '';
+    return contentType.includes('application/json')
+      ? JSON.stringify(data)
+      : data;
+  }
+
   send(data) {
     this.callback(null, {
       statusCode: this.statusCode,
       headers: this.headers,
-      body: JSON.stringify(data)
+      body: this.body(data)
     });
   }
 }
