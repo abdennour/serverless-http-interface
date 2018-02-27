@@ -25,11 +25,16 @@ npm install --save serverless-http-interface;
 ```js
 const httpInterface = require('serverless-http-interface');
 
+console.log(process.env.SLS_PROVIDER_NAME)
+// --> e.g "aws"
+
 function handler(request, response) {
     response.status(200).send({ hello: 'World' })
 }
 
 exports.handler = httpInterface(handler);
+// or pass the providerName explicitly
+// exports.handler = httpInterface(handler, 'aws');
 ```
 
 
@@ -102,7 +107,7 @@ function handler(request, response, event, context, callback) {
     response.status(200).send(event.queryStringParameters);
 }
 
-exports.handler = httpInterface(handler);
+exports.handler = httpInterface(handler, 'azure');
 
 ```
 

@@ -1,13 +1,12 @@
-const readYaml = require('read-yaml');
 const NotSupportedProvider = require('./_errors/NotSupportedProvider');
-// Hello
+
 let HttpRequest, HttpResponse;
 
-module.exports = function(handler) {
-  const config = readYaml.sync(`${process.cwd()}/serverless.yml`);
+function httpInterface(handler, providerName = process.env.SLS_PROVIDER_NAME) {
+
   try {
-    HttpRequest = require(`./${config.provider.name}/HttpRequest`);
-    HttpResponse = require(`./${config.provider.name}/HttpResponse`);
+    HttpRequest = require(`./${providerName}/HttpRequest`);
+    HttpResponse = require(`./${providerName}/HttpResponse`);
     return (...args) => {
       const request = new HttpRequest(...args);
       const response = new HttpResponse(...args);
@@ -18,3 +17,6 @@ module.exports = function(handler) {
     return;
   }
 };
+
+
+module.exports = httpInterface;
